@@ -21,7 +21,7 @@ def estimate_pose(image_path, person_height_cm, thr=0.2, width=368, height=368, 
     inWidth = width
     inHeight = height
 
-    net = cv.dnn.readNetFromTensorflow("human-pose-estimation-opencv-master/graph_opt.pb")
+    net = cv.dnn.readNetFromTensorflow("model/graph_opt.pb")
 
     frame = cv.imread(image_path)
     if frame is None:
@@ -102,4 +102,4 @@ def estimate_pose(image_path, person_height_cm, thr=0.2, width=368, height=368, 
 # Provide the real-world height of the person in centimeters.
 person_height_cm = 165.0  # Replace with the actual height of the person in cm
 
-estimate_pose('D:/Fiverr Projects/Pose Project/files/test1.jpg', person_height_cm)
+estimate_pose('D:/Fiverr Projects/Pose Project/files/6/front_img.jpg', person_height_cm)
