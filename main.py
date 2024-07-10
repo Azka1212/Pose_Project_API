@@ -102,4 +102,4 @@ def estimate_pose(image_path, person_height_cm, thr=0.2, width=368, height=368, 
 # Provide the real-world height of the person in centimeters.
 person_height_cm = 165.0  # Replace with the actual height of the person in cm
 
-estimate_pose('D:/Fiverr Projects/Pose Project/files/6/front_img.jpg', person_height_cm)
+estimate_pose('files/6/front_img.jpg', person_height_cm)
